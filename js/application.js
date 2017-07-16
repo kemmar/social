@@ -7,12 +7,10 @@ app.config(function($routeProvider) {
                 controller  : 'homeController'
             })
             .when('/profile', {
-                            templateUrl : 'template/page/profile.html',
-                            controller  : 'homeController'
+                            templateUrl : 'template/page/profile.html'
                         })
             .when('/tags', {
-                templateUrl : 'template/page/tags.html',
-                controller  : 'homeController'
+                            templateUrl : 'template/page/tags.html'
             })
             .when('/followers', {
                             templateUrl : 'template/page/followers.html'
@@ -20,10 +18,8 @@ app.config(function($routeProvider) {
             .when('/following', {
                             templateUrl : 'template/page/following.html'
                         })
-            .when('/images', {
-                            templateUrl : 'template/page/images.html'
-                        })
-            .when('/videos', {
-                            templateUrl : 'template/page/videos.html'
+            .when('/media', {
+                            templateUrl : 'template/page/media.html',
+                            controller : 'mediaController'
                         })
     });

@@ -1,0 +1,1 @@
+app.controller("mediaController", ['$scope',function($scope) {}]);

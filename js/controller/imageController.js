@@ -1,1 +1,0 @@
-app.controller("imageController", ['$scope',function($scope) {}]);
