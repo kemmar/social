@@ -1,0 +1,63 @@
+#menu {
+	float: left;
+	height:33px;
+	width:auto;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left; background:url(../images/menu_sep.jpg) no-repeat right;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height:33px;
+	width:auto;
+	text-decoration: none;
+	font-size:14px;
+	font-weight: bold;
+	color: #FFF; margin:0px; padding:18px 25px 0 25px;
+    text-align: center;margin-right: 2px;
+}
+
+#menu a:hover {
+	color: #5a9600; background:#d7d900;
+}
+
+#menu .active {
+	color: #5a9600; background:#d7d900;
+}
+
+
+#home .home, #about .about, #services .services, #home_care .home_care, #our_staff .our_staff, #live .live, #care .care,  #contactus .contactus{
+	color: #5a9600; background:#d7d900;
+}
+
+#slideshow {
+    position:relative;
+    height:301px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:25px;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}

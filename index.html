@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app="limApp">
+
+<div ng-controller="applicationController">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <title>:: {{ title }} :: {{ page }}</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/limilccs.css" rel="stylesheet" type="text/css"/>
+
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-routing.js"></script>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/application.js"></script>
+        <script type="text/javascript" src="js/directive/layoutDirective.js"></script>
+        <script type="text/javascript" src="js/directive/sideBarDirective.js"></script>
+
+        <script type="text/javascript" src="js/controller/application_controller.js"></script>
+        <script type="text/javascript" src="js/controller/meController.js"></script>
+        <script type="text/javascript" src="js/controller/imageController.js"></script>
+    </head>
+
+
+    <header-dir></header-dir>
+    <div class="container view">
+        <side-bar class="col-md-3" style="padding-left: 0px; padding-top: 15px; "></side-bar>
+        <div ng-view class="col-md-9 body_content"></div>
+    </div>
+
+</div>
+</html>
